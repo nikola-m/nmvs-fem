@@ -276,7 +276,7 @@
     element_neighbor, nz_num, adj_col, ia, ja )
 
   if ( debug ) then
-    call i4vec_print2 ( 10, ia, ja, '  First 10 lines of the IA and JA arrays:' )
+    call i4vec_print2 ( 100, ia, ja, '  First 100 lines of the IA and JA arrays:' )
   end if
 
   deallocate ( adj_col )
@@ -439,6 +439,7 @@
   deallocate ( dpsi_dxi )
   deallocate ( kel )
   deallocate ( map )
+
 !
 !  Terminate.
 !
@@ -448,6 +449,7 @@
 
   write ( *, '(a)' ) ' '
   call timestamp ( )
+
 !######## END Section 7: FINISHING PROGAM EXECUTION ################################
   stop
   end program
