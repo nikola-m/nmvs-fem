@@ -1,3 +1,0 @@
-#!/bin/bash
- gfortran -Wall precision.f90 matrix.f90 quadrature.f90 shape_functions.f90 fem_module.f90 fem2d_elastica_cg.f90 -O -o fem2d_elastica_cg
-
